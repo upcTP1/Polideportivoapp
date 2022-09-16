@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "305203600824",
+    "firebase_url": "https://pmpolideportivoapp-default-rtdb.firebaseio.com",
+    "project_id": "pmpolideportivoapp",
+    "storage_bucket": "pmpolideportivoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305203600824:android:122700869122e1dc4f434d",
+        "android_client_info": {
+          "package_name": "com.upc.polideportivoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305203600824-od6fo8dmjo3k73h5q3ppu3jh86dncsf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL_szRgHYDkieDars8gEUWRiawRSyACYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305203600824-od6fo8dmjo3k73h5q3ppu3jh86dncsf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
