@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btnIngresoFutbol"
         android:layout_width="114dp"
         android:layout_height="114dp"
         android:layout_marginStart="16dp"
@@ -101,7 +101,7 @@
         android:padding="20dp"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toStartOf="@+id/imageButton4"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/btnIngresoFutbol"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/img_tenis"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -134,7 +134,7 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresoFutbol" />
 
     <TextView
         android:id="@+id/textView11"
