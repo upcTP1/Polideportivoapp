@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Polideportivoapp</string>
+    
+    <string name="completatureserva">Para completar tu reserva en Deport PLaza San Martin necesitamos que registres los siguientes datos</string>
+    <string-array name="horas">
+        <item>4-5</item>
+        <item>5-6</item>
+        <item>7-8</item>
+    </string-array>
 </resources>
