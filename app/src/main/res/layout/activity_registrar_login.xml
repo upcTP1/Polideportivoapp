@@ -41,88 +41,104 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="@android:dimen/thumbnail_width"
             android:layout_marginTop="125dp"
-            android:background="@color/white"
+            android:autoSizeTextType="uniform"
             android:text="Registro de Usuario"
-            android:textColor="#06A80D"
-            android:textSize="20dp" />
+            android:textColor="#EC0755"
+            android:textSize="22dp" />
 
     </FrameLayout>
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtNombre"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
         android:layout_marginTop="59dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/caja"
+        android:drawableStart="@drawable/ic_nombre"
         android:drawablePadding="20dp"
         android:ems="10"
         android:foregroundTint="#BFFFFFFF"
         android:hint="Nombre"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreoRegistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
 
-
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtCorreoRegistro"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/caja"
+        android:drawableStart="@drawable/ic_correo"
         android:ems="10"
         android:hint="Correo Electronico"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPasswordRegistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtPasswordRegistro"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
         android:layout_marginTop="6dp"
         android:layout_marginBottom="23dp"
+        android:background="@drawable/caja"
+        android:drawableStart="@drawable/ic_password"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtConfirmarPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreoRegistro" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtConfirmarPassword"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="32dp"
+        android:background="@drawable/caja"
         android:ems="10"
         android:hint="Repetir Contraseña"
+        android:drawableStart="@drawable/ic_password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordRegistro" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRegistrarUsuario"
         android:layout_width="325dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="3dp"
         android:text="Registrar Usuario"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/btnIrLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmarPassword" />
 
     <Button
-        android:id="@+id/textView3"
+        android:id="@+id/btnIrLogin"
         style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -133,7 +149,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistrarUsuario"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
