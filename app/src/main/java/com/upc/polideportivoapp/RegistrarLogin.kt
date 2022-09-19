@@ -36,9 +36,9 @@ class RegistrarLogin : AppCompatActivity() {
         val nombres = txtNombre.text.toString()
         val correo = txtCorreoRegistro.text.toString()
         val password = txtPasswordRegistro.text.toString()
-        val persona = Usuario(nombres, correo, password)
+        val usuario = Usuario(nombres, correo, password)
 
-        referencia.child(referencia.push().key.toString()).setValue(persona)
+        referencia.child(referencia.push().key.toString()).setValue(usuario)
         finish()
     }
 
