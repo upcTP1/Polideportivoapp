@@ -1,11 +1,12 @@
 package com.upc.polideportivoapp
 
 import android.widget.Spinner
+import java.util.*
 
 class PersonaRR(nombresRR:String, telefonoRR:String, emailRR:String,dtDatePicker1:String, spinner1:String ) {
-    var nombresRR:String = nombresRR
-    var telefonoRR:String = telefonoRR
-    var emailRR:String = emailRR
-    var dtDatePicker1:String = dtDatePicker1
-    var spinner1:String = spinner1
+    var nombres:String = nombresRR
+    var telefono:String = telefonoRR
+    var email:String = emailRR
+    var Fecha:String = spinner1
+    var Turno:String = dtDatePicker1
 }

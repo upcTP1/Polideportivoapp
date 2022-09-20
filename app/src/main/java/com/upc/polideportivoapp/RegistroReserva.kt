@@ -59,8 +59,6 @@ class RegistroReserva : AppCompatActivity() {
         txtTelefonoRR = findViewById(R.id.txtTelefonoRR)
         txtEmailRR = findViewById(R.id.txtEmailRR)
         btnGuardarRR = findViewById(R.id.btnGuardarRR)
-        spinner1 = findViewById(R.id.spinner1)
-        dtDatePicker1 = findViewById(R.id.edtDatePicker1)
         btnGuardarRR.setOnClickListener {
             guardar();
         }
@@ -70,8 +68,8 @@ class RegistroReserva : AppCompatActivity() {
         val nombresRR = txtNombresRR.text.toString()
         val telefonoRR = txtTelefonoRR.text.toString()
         val emailRR = txtEmailRR.text.toString()
-        val spinner1 = spinner1.toString()
-        val dtDatePicker1= dtDatePicker1.toString()
+        val dtDatePicker1= dtDatePicker1.text.toString()
+        val spinner1 = setOf(spinner1).toString()
 
         val persona = PersonaRR(nombresRR, telefonoRR,emailRR,spinner1,dtDatePicker1)
 
