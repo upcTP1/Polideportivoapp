@@ -2,6 +2,7 @@ package com.upc.polideportivoapp
 
 import android.app.Activity
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,7 @@ class RegistroReserva : AppCompatActivity() {
         private lateinit var txtTelefonoRR:EditText
         private lateinit var txtEmailRR:EditText
         private lateinit var btnGuardarRR:Button
+       // private lateinit var btnAceptarpopup:Button
         private val db = Firebase.database
 
 
@@ -104,17 +106,24 @@ class RegistroReserva : AppCompatActivity() {
         if(nombresRR.isEmpty() || telefonoRR.isEmpty() || emailRR.isEmpty() || mostrarFecha.isEmpty() || dtDatePicker1.isEmpty()){
             Toast.makeText(this,"Complete todos los campos", Toast.LENGTH_SHORT).show()
         }else{
-
-            val dialogBindings = layoutInflater.inflate(R.layout.prueba1123,null)
-
+            //popup
+            val dialogBindings = layoutInflater.inflate(R.layout.activity_popup1,null)
             val myDialog = Dialog(this)
             myDialog.setContentView(dialogBindings)
-
-            myDialog.setCancelable(true)
+            myDialog.setCancelable(false)
             myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             myDialog.show()
+
+            //-boton Aceptar popup
+            val btnAceptarpopup =dialogBindings.findViewById<Button>(R.id.btnAceptarpopup)
+            btnAceptarpopup.setOnClickListener {
+                val intent = Intent(this,MainActivity::class.java)
+                startActivity(intent)
+            }
+            //------
             referencia.child(referencia.push().key.toString()).setValue(persona)
-            finish()
+            //finish()
         }
     }
 }
+
