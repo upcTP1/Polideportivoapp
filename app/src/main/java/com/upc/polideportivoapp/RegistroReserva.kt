@@ -1,6 +1,9 @@
 package com.upc.polideportivoapp
 
 import android.app.Activity
+import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -101,6 +104,15 @@ class RegistroReserva : AppCompatActivity() {
         if(nombresRR.isEmpty() || telefonoRR.isEmpty() || emailRR.isEmpty() || mostrarFecha.isEmpty() || dtDatePicker1.isEmpty()){
             Toast.makeText(this,"Complete todos los campos", Toast.LENGTH_SHORT).show()
         }else{
+
+            val dialogBindings = layoutInflater.inflate(R.layout.prueba1123,null)
+
+            val myDialog = Dialog(this)
+            myDialog.setContentView(dialogBindings)
+
+            myDialog.setCancelable(true)
+            myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            myDialog.show()
             referencia.child(referencia.push().key.toString()).setValue(persona)
             finish()
         }

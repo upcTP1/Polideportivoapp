@@ -29,6 +29,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
                 android:text="COMPLETA TU RESERVA!"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +55,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Nombre Completo:"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -62,6 +65,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:hint="Ingrese su Nombre Completo"
+                android:drawableStart="@drawable/ic_nombre"
+                android:drawablePadding="10dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
@@ -78,6 +83,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Teléfono:"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtNombresRR" />
 
@@ -90,6 +96,8 @@
                 android:layout_marginEnd="16dp"
                 android:ems="10"
                 android:hint="Ingrese su Telefono"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
                 android:inputType="phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -104,6 +112,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="E-mail:"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtTelefonoRR" />
 
@@ -116,6 +125,8 @@
                 android:layout_marginEnd="16dp"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_correo"
+                android:drawablePadding="10dp"
                 android:hint="Ingrese su E-mail"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -129,6 +140,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Fecha:"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtEmailRR" />
 
@@ -143,6 +155,8 @@
                 android:ems="10"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
+                android:drawableStart="@drawable/ic_calendar"
+                android:drawablePadding="10dp"
                 android:hint="Seleciona la fecha"
                 android:inputType="text|number"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -157,6 +171,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Turno:"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edtDatePicker1" />
 
@@ -164,8 +179,12 @@
                 android:id="@+id/spinner1"
                 android:layout_width="134dp"
                 android:layout_height="6dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="120dp"
+
                 android:autofillHints="name"
+
+                android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView30"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -182,13 +201,15 @@
 
             <EditText
                 android:id="@+id/mostrarfecha"
-                android:layout_width="153dp"
+                android:layout_width="180dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
+                android:drawableStart="@drawable/ic_watch"
+                android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint="Seleciona horario"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
+                android:hint="Seleciona horario"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView30" />
