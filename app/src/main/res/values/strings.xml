@@ -3,8 +3,16 @@
     
     <string name="completatureserva">Para completar tu reserva en Deport PLaza San Martin necesitamos que registres los siguientes datos</string>
     <string-array name="horas">
-        <item>4-5</item>
-        <item>5-6</item>
-        <item>7-8</item>
+        <item>  09:00   -  10:00  </item>
+        <item>  10:00  -  11:00  </item>
+        <item>  11:00  -  12:00  </item>
+        <item>  12:00  -  13:00  </item>
+        <item>  13:00  -  14:00  </item>
+        <item>  14:00  -  15:00  </item>
+        <item>  16:00  -  17:00  </item>
+        <item>  17:00  -  18:00  </item>
+        <item>  18:00  -  19:00  </item>
+        <item>  20:00  -  21:00  </item>
+        <item>  21:00  -  22:00  </item>
     </string-array>
 </resources>

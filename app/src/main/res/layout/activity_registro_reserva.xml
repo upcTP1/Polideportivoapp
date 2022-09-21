@@ -162,13 +162,11 @@
 
             <Spinner
                 android:id="@+id/spinner1"
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:layout_marginStart="16dp"
+                android:layout_width="134dp"
+                android:layout_height="6dp"
                 android:layout_marginEnd="16dp"
                 android:autofillHints="name"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView30"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -177,10 +175,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
                 android:text="RERSERVAR"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/mostrarfecha"
+                android:layout_width="153dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="Seleciona horario"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

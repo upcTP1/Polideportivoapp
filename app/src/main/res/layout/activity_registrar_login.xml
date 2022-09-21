@@ -19,9 +19,9 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="193dp"
-            android:layout_height="180dp"
+            android:layout_height="162dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             app:srcCompat="@drawable/ic_camara" />
 
         <com.google.android.material.button.MaterialButton
@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="95dp"
+            android:layout_marginTop="75dp"
             android:layout_marginEnd="8dp"
             android:text="Subir Imagen"
 
@@ -42,10 +42,10 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="@android:dimen/thumbnail_width"
             android:layout_marginTop="125dp"
+
             android:autoSizeTextType="uniform"
             android:text="Registro de Usuario"
             android:textColor="#EC0755"
-
             android:textSize="22dp" />
 
     </FrameLayout>
@@ -119,9 +119,9 @@
         android:layout_height="48dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/caja"
+        android:drawableStart="@drawable/ic_password"
         android:ems="10"
         android:hint="Repetir Contraseña"
-        android:drawableStart="@drawable/ic_password"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingStart="10dp"
