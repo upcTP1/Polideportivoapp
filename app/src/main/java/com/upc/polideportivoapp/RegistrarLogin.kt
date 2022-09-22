@@ -54,8 +54,11 @@ class RegistrarLogin : AppCompatActivity() {
             Toast.makeText(this, "Completar todos los campos", Toast.LENGTH_LONG).show()
         }else {
             if(txtPasswordRegistro.text.toString() !=txtConfirmarPassword.text.toString()){
-                Toast.makeText(this, "la constraseña son diferentes", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "la constraseña son diferentes", Toast.LENGTH_SHORT).show()
             } else {
+                //retornoa principal
+                val intent = Intent(this,MainActivity::class.java)
+                startActivity(intent)
                 referencia.child(referencia.push().key.toString()).setValue(usuario)
                 finish()
             }
