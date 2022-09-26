@@ -8,13 +8,17 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.maps.*
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
-class MainFutbol : AppCompatActivity(){
+class MainFutbol : AppCompatActivity(), OnMapReadyCallback{
 
     private val list = mutableListOf<CarouselItem>()
     private lateinit var btnReservar:Button
+    private lateinit var map:GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +29,9 @@ class MainFutbol : AppCompatActivity(){
         list.add(CarouselItem(imageDrawable = R.drawable.photo_cancha2))
         list.add(CarouselItem(imageDrawable = R.drawable.photo_cancha3))
         carousel.addData(list)
+
+        //mapa
+        createFragment()
 
         // popupfutbol
         /*
@@ -47,4 +54,26 @@ class MainFutbol : AppCompatActivity(){
             startActivity(intent)
         }
     }
+    //mapa
+    private fun createFragment(){
+        val mapFragment:SupportMapFragment  = supportFragmentManager.findFragmentById(R.id.maps) as SupportMapFragment
+        mapFragment.getMapAsync(this)
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        map = googleMap
+        createMarket()
+    }
+    private fun createMarket(){
+        val coordinates = LatLng(-12.069967120621095, -77.04133118857037)
+        val marker = MarkerOptions().position(coordinates).title("PLaza San Martin")
+        map.addMarker(marker)
+        map.animateCamera(
+            CameraUpdateFactory.newLatLngZoom(coordinates, 18f),
+            1000,
+            null
+        )
+        map.uiSettings.isZoomControlsEnabled = true
+    }
+
 }
