@@ -19,8 +19,11 @@ class AdaptadorPersonalizadoLisReservas(listadeReservas: List<PersonaRR>):Recycl
 
     override fun onBindViewHolder(holder: AdaptadorPersonalizadoLisReservas.MiViewHolder,position: Int) {
         val  personaItem = listadeReservas[position]
-        holder.filareservafecha.text = personaItem.fecha
+        holder.filareservafecha.text = personaItem.fecha+"|"
         holder.filareservaturno.text = personaItem.turno
+        holder.filareservanombre.text = personaItem.nombres+"|"
+        holder.filareservatelefono.text = personaItem.telefono
+
     }
 
     override fun getItemCount(): Int {
@@ -29,6 +32,8 @@ class AdaptadorPersonalizadoLisReservas(listadeReservas: List<PersonaRR>):Recycl
     class MiViewHolder(view:View):RecyclerView.ViewHolder(view){
         val filareservafecha:TextView = view.findViewById(R.id.filareservafecha)
         val filareservaturno:TextView = view.findViewById(R.id.filareservaturno)
+        val filareservanombre:TextView = view.findViewById(R.id.filareservanombre)
+        val filareservatelefono:TextView = view.findViewById(R.id.filareservatelefono)
     }
 
 }

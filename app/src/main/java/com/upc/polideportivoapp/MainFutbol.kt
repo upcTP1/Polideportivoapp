@@ -20,6 +20,7 @@ class MainFutbol : AppCompatActivity(), OnMapReadyCallback{
     private lateinit var btnReservar:Button
     private lateinit var map:GoogleMap
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_futbol)
